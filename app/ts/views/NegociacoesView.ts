@@ -1,6 +1,7 @@
-class NegociacoesView extends View<Negociacoes> {
+import { View } from './View';
+import { Negociacoes } from '../models/Negociacoes';
 
-
+export class NegociacoesView extends View<Negociacoes> {
 
     template(model: Negociacoes): string {
 
@@ -8,7 +9,7 @@ class NegociacoesView extends View<Negociacoes> {
         <table class="table table-hover table-bordered">
             <thead>
                 <tr>
-                    <th>DATA</th>
+                    <th>DATA</th> 
                     <th>QUANTIDADE</th>
                     <th>VALOR</th>
                     <th>VOLUME</th>
